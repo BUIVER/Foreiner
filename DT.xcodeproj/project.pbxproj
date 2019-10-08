@@ -18,6 +18,7 @@
 		4B3983D9233C9B4E0085CC54 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3983D8233C9B4E0085CC54 /* Constants.swift */; };
 		4B3983DB233C9E760085CC54 /* SearchUserStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3983DA233C9E760085CC54 /* SearchUserStructure.swift */; };
 		4B3983E2233DF5E50085CC54 /* DataParseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3983E1233DF5E50085CC54 /* DataParseService.swift */; };
+		4B649D94234CAE4100A05F88 /* SearchResultsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B649D93234CAE4100A05F88 /* SearchResultsItem.swift */; };
 		4B792292233E461400D856F1 /* PlayerStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B792291233E461400D856F1 /* PlayerStructure.swift */; };
 		4B792294233E4AD200D856F1 /* UIProfileView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B792293233E4AD200D856F1 /* UIProfileView.xib */; };
 		4B792297233E510100D856F1 /* UIProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B792296233E510100D856F1 /* UIProfileView.swift */; };
@@ -45,6 +46,7 @@
 		4B3983D8233C9B4E0085CC54 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		4B3983DA233C9E760085CC54 /* SearchUserStructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUserStructure.swift; sourceTree = "<group>"; };
 		4B3983E1233DF5E50085CC54 /* DataParseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataParseService.swift; sourceTree = "<group>"; };
+		4B649D93234CAE4100A05F88 /* SearchResultsItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsItem.swift; sourceTree = "<group>"; };
 		4B792291233E461400D856F1 /* PlayerStructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerStructure.swift; sourceTree = "<group>"; };
 		4B792293233E4AD200D856F1 /* UIProfileView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UIProfileView.xib; sourceTree = "<group>"; };
 		4B792296233E510100D856F1 /* UIProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIProfileView.swift; sourceTree = "<group>"; };
@@ -212,6 +214,7 @@
 				4BDEDA4B234487D300B006DA /* Cells */,
 				4BE4CCF82344B1DE00456F88 /* SearchResultsViewController.swift */,
 				4BE4CD03234C754800456F88 /* SearchResultViewModel.swift */,
+				4B649D93234CAE4100A05F88 /* SearchResultsItem.swift */,
 			);
 			path = "Search Result";
 			sourceTree = "<group>";
@@ -356,6 +359,7 @@
 				4B3983BC233BA0590085CC54 /* AppDelegate.swift in Sources */,
 				4BE4CD04234C754800456F88 /* SearchResultViewModel.swift in Sources */,
 				4B3983E2233DF5E50085CC54 /* DataParseService.swift in Sources */,
+				4B649D94234CAE4100A05F88 /* SearchResultsItem.swift in Sources */,
 				4B3983DB233C9E760085CC54 /* SearchUserStructure.swift in Sources */,
 				4BE4CCFB234B204C00456F88 /* ProfileService.swift in Sources */,
 				4B3983D7233C9A8A0085CC54 /* OpenDotaService.swift in Sources */,

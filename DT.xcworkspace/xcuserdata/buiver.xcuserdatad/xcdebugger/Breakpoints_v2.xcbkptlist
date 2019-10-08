@@ -205,38 +205,6 @@
             endingLineNumber = "29"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "8F1E9328-C749-4183-815D-9AE472A6AE9F - 9f3c37c332799170"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "DT.ProfileViewController.viewDidLoad() -&gt; ()"
-                  moduleName = "DT"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/buiver/Desktop/DT/DT/Presentation/Profile%20View%20Controller/ProfileViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "29"
-                  endingLineNumber = "29"
-                  offsetFromSymbolStart = "975">
-               </Location>
-               <Location
-                  uuid = "8F1E9328-C749-4183-815D-9AE472A6AE9F - 7181e1f10cbf92c4"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; () in DT.ProfileViewController.viewDidLoad() -&gt; ()"
-                  moduleName = "DT"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/buiver/Desktop/DT/DT/Presentation/Profile%20View%20Controller/ProfileViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "30"
-                  endingLineNumber = "30"
-                  offsetFromSymbolStart = "158">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -253,38 +221,6 @@
             endingLineNumber = "30"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "189930BB-CA72-4AEE-8DB8-725E2B8B7198 - 7181e1f10cbf92c4"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; () in DT.ProfileViewController.viewDidLoad() -&gt; ()"
-                  moduleName = "DT"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/buiver/Desktop/DT/DT/Presentation/Profile%20View%20Controller/ProfileViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "30"
-                  endingLineNumber = "30"
-                  offsetFromSymbolStart = "158">
-               </Location>
-               <Location
-                  uuid = "189930BB-CA72-4AEE-8DB8-725E2B8B7198 - f0e2c45b287e0e58"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; () in closure #1 () -&gt; () in DT.ProfileViewController.viewDidLoad() -&gt; ()"
-                  moduleName = "DT"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/buiver/Desktop/DT/DT/Presentation/Profile%20View%20Controller/ProfileViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "31"
-                  endingLineNumber = "31"
-                  offsetFromSymbolStart = "34">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy

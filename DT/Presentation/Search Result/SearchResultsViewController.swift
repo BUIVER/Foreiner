@@ -13,11 +13,7 @@ import ReactiveSwift
 class SearchResultsViewController: UIViewController {
     
     var searchResults: [User]?
-    var filteredUsers = [User]()
     let searchVM = SearchViewModel()
-    var network = OpenDotaService()
-    let searchService = SearchService()
-    var parser = DataParseService()
     var table: UITableView!
     let lifetime = Lifetime.make().lifetime
     override func viewDidLoad() {
@@ -28,48 +24,19 @@ class SearchResultsViewController: UIViewController {
     
 }
 
-
 //MARK: SearchController configuration
 
 extension SearchResultsViewController: UISearchResultsUpdating, UISearchBarDelegate {
-    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-//        searchVM.startSearch(searchText)
-        searchService.performSearch(searchText).debounce(3, on: QueueScheduler.main, discardWhenCompleted: true).startWithResult() { [weak self] data in
-            guard let foundData = data.value else {return}
-            self?.searchResults = self?.parser.parseSearchData(foundData)
+    func updateSearchResults(for searchController: UISearchController) {
+        searchVM.startSearch(searchController.searchBar.text ?? "", completion: { [weak self] _ in
             DispatchQueue.main.async {
                 self?.table.reloadData()
             }
-        }
+        })
     }
-    
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         searchResults = []
         table.reloadData()
-    }
-    
-    func updateSearchResults(for searchController: UISearchController) {
-        filterContentForSearchText(searchController.searchBar.text!)
-    }
-    
-    func filterContentForSearchText(_ searchText: String, scope: String = "All") {
-        if (searchResults?.count ?? 0 > 0) {
-            filteredUsers = (searchResults?.filter({( user : User) -> Bool in
-                return user.personaname.lowercased().contains(searchText.lowercased())
-            }) ?? [])
-            table.reloadData()
-        }
-    }
-    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        if let text = searchBar.text {
-            searchService.performSearch(text).startWithResult() { [weak self] data in
-                guard let foundData = data.value else {return}
-                self?.searchResults = self?.parser.parseSearchData(foundData)
-                DispatchQueue.main.async {
-                    self?.table.reloadData()
-                }
-            }
-        }
     }
 }
 //MARK: UITABLEVIEW configuration
@@ -78,35 +45,26 @@ extension SearchResultsViewController: UITableViewDelegate, UITableViewDataSourc
         return 1
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return searchResults?.count ?? 0
+        return searchVM.rowsAmount()
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if indexPath.section == 0 {
-            let cellIdentifier = "searchCell"
-            guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? SearchResultsTableCell else {return UITableViewCell()}
-            guard let user = searchResults?[indexPath.row] else {return UITableViewCell()}
-            cell.accountIdLabel.text = String(user.accountId)
-            Nuke.loadImage(with: user.avatarfull, into: cell.avatarImageView)
-            cell.personaNameLabel.text = user.personaname
-            cell.lastMatchTimeLabel.text = user.lastMatchTime ?? ""
-            return cell
-        } else {
+        let cellIdentifier = "searchCell"
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? SearchResultsTableCell else {
             return UITableViewCell()
         }
-    }
-    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        if section == 0 {
-            return nil
+        searchVM.loadCell(for: indexPath)
+        guard let item = searchVM.searchItem else {
+            return UITableViewCell()
         }
-        return sectionName[section-1]
+        cell.loadCell(withData: item)
+        return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if let data = searchResults?[indexPath.row] {
             let profileVC = ProfileViewController(accountIdentifier: data.accountId)
             UserDefaults.standard.set(data.accountId, forKey: "defaultUser")
             show(profileVC, sender: nil)
-            //self.navigationController?.pushViewController(profileVC, animated: true)
         }
     }
     func setupTable() {
