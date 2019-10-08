@@ -1,0 +1,29 @@
+PODS:
+  - Nuke (8.2.0)
+  - ReactiveCocoa (9.0.0):
+    - ReactiveSwift (~> 5.0)
+  - ReactiveSwift (5.0.1):
+    - Result (~> 4.1)
+  - Result (4.1.0)
+
+DEPENDENCIES:
+  - Nuke
+  - ReactiveCocoa (~> 9.0)
+  - ReactiveSwift (~> 5.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Nuke
+    - ReactiveCocoa
+    - ReactiveSwift
+    - Result
+
+SPEC CHECKSUMS:
+  Nuke: 0134d56b7c9dd3e69e9bce8bdcb37c2e0d55469f
+  ReactiveCocoa: 29709cf0cc7502ddd04a51220e10ee0336d8bec8
+  ReactiveSwift: cac20a5bbe560c5806bd29c0fccf90d03b996ac1
+  Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
+
+PODFILE CHECKSUM: e3116ebb76e6059a8b5e36031b2b19eb6cd194d7
+
+COCOAPODS: 1.6.1
