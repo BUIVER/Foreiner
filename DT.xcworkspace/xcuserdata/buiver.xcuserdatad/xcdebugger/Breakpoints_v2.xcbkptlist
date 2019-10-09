@@ -18,240 +18,192 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "DC8D7E10-606D-4DA2-B55F-E8BEFA35A596"
+            uuid = "47324C93-FF10-4C41-9500-8F6362D9D2C6"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "DT/Presentation/Profile View Controller/ProfileVIewModel.swift"
+            filePath = "DT/Model/Network/SearchService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "20"
-            endingLineNumber = "20"
-            landmarkName = "getProfileData(_:completion:)"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "performSearch(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "47324C93-FF10-4C41-9500-8F6362D9D2C6 - c32bcd7888fae6f9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DT.SearchService.performSearch(Swift.String) -&gt; ReactiveSwift.SignalProducer&lt;Foundation.Data, Swift.Error&gt;"
+                  moduleName = "DT"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/buiver/Desktop/Foreiner/DT/Model/Network/SearchService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "101">
+               </Location>
+               <Location
+                  uuid = "47324C93-FF10-4C41-9500-8F6362D9D2C6 - 38766ec046374697"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (ReactiveSwift.Signal&lt;Foundation.Data, Swift.Error&gt;.Observer, ReactiveSwift.Lifetime) -&gt; () in DT.SearchService.performSearch(Swift.String) -&gt; ReactiveSwift.SignalProducer&lt;Foundation.Data, Swift.Error&gt;"
+                  moduleName = "DT"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/buiver/Desktop/Foreiner/DT/Model/Network/SearchService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "282">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "762F0829-94BC-494F-9196-97F102CCC0C8"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DT/Model/Network/SearchService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "performSearch(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "97298E8F-510E-4797-8C5C-8FB0F35E71FC"
+            uuid = "32D3E647-A6F3-41EB-BE83-4C5E60C798A0"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "DT/Presentation/Profile View Controller/ProfileVIewModel.swift"
+            filePath = "DT/Model/Network/SearchService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "25"
-            endingLineNumber = "25"
-            landmarkName = "getProfileData(_:completion:)"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "performSearch(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "1CC34CA1-B722-4080-9557-D5231B5508D2"
+            uuid = "87E6D0B2-F5CB-414F-B513-D3E38EFEA9D2"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "DT/Presentation/Profile View Controller/ProfileVIewModel.swift"
+            filePath = "DT/Model/Network/SearchService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "23"
             endingLineNumber = "23"
-            landmarkName = "getProfileData(_:completion:)"
+            landmarkName = "performSearch(_:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "87E6D0B2-F5CB-414F-B513-D3E38EFEA9D2 - 38766ec046374697"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (ReactiveSwift.Signal&lt;Foundation.Data, Swift.Error&gt;.Observer, ReactiveSwift.Lifetime) -&gt; () in DT.SearchService.performSearch(Swift.String) -&gt; ReactiveSwift.SignalProducer&lt;Foundation.Data, Swift.Error&gt;"
+                  moduleName = "DT"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/buiver/Desktop/Foreiner/DT/Model/Network/SearchService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "1404">
+               </Location>
+               <Location
+                  uuid = "87E6D0B2-F5CB-414F-B513-D3E38EFEA9D2 - 90d807de044bb5c6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Result.Result&lt;(Foundation.Data, __C.NSURLResponse), Swift.Error&gt;) -&gt; () in closure #1 (ReactiveSwift.Signal&lt;Foundation.Data, Swift.Error&gt;.Observer, ReactiveSwift.Lifetime) -&gt; () in DT.SearchService.performSearch(Swift.String) -&gt; ReactiveSwift.SignalProducer&lt;Foundation.Data, Swift.Error&gt;"
+                  moduleName = "DT"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/buiver/Desktop/Foreiner/DT/Model/Network/SearchService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "231">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "4999D674-9B08-4211-A9FF-8F8F486530DA"
+            uuid = "28B3E064-6B31-4D80-8D95-B4AD63863246"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "DT/Presentation/Profile View Controller/ProfileVIewModel.swift"
+            filePath = "DT/Model/Network/SearchService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
-            landmarkName = "fillProfileItem()"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "performSearch(_:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "28B3E064-6B31-4D80-8D95-B4AD63863246 - 90d807de044bb5c6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Result.Result&lt;(Foundation.Data, __C.NSURLResponse), Swift.Error&gt;) -&gt; () in closure #1 (ReactiveSwift.Signal&lt;Foundation.Data, Swift.Error&gt;.Observer, ReactiveSwift.Lifetime) -&gt; () in DT.SearchService.performSearch(Swift.String) -&gt; ReactiveSwift.SignalProducer&lt;Foundation.Data, Swift.Error&gt;"
+                  moduleName = "DT"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/buiver/Desktop/Foreiner/DT/Model/Network/SearchService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "878">
+               </Location>
+               <Location
+                  uuid = "28B3E064-6B31-4D80-8D95-B4AD63863246 - 90d807de044bb5c6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Result.Result&lt;(Foundation.Data, __C.NSURLResponse), Swift.Error&gt;) -&gt; () in closure #1 (ReactiveSwift.Signal&lt;Foundation.Data, Swift.Error&gt;.Observer, ReactiveSwift.Lifetime) -&gt; () in DT.SearchService.performSearch(Swift.String) -&gt; ReactiveSwift.SignalProducer&lt;Foundation.Data, Swift.Error&gt;"
+                  moduleName = "DT"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/buiver/Desktop/Foreiner/DT/Model/Network/SearchService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "883">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "33A4622C-BFD1-4E89-891C-CDB362BDBBDD"
+            uuid = "19A66310-5E80-428D-8887-33DB303A6F81"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "DT/Presentation/Profile View Controller/ProfileVIewModel.swift"
+            filePath = "DT/Model/Network/SearchService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
-            landmarkName = "fillProfileItem()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "AD602A7D-6A0F-4E29-899F-1AAB42BB75D3"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "DT/Presentation/Profile View Controller/ProfileVIewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
-            landmarkName = "fillProfileItem()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "68D17B23-73E8-4A80-AFBD-C1EF06BDC42D"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "DT/Presentation/Profile View Controller/ProfileVIewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
-            landmarkName = "fillProfileItem()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "12C5E40A-365E-45FC-928C-1DF2C11B2AEC"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "DT/Presentation/Profile View Controller/ProfileVIewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
-            landmarkName = "fillProfileItem()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "2FCD55CF-2639-4E3A-80DB-A3DA2F4FC9ED"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "DT/Presentation/Profile View Controller/ProfileVIewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
-            landmarkName = "fillProfileItem()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "B19B142A-1B9C-479D-A5D0-1C57F69B2256"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "DT/Presentation/Profile View Controller/ProfileVIewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
-            landmarkName = "fillProfileItem()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "AAA7E37F-7E5C-4672-BFF3-B6B352691DDA"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "DT/Presentation/Profile View Controller/ProfileVIewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "39"
-            endingLineNumber = "39"
-            landmarkName = "fillProfileItem()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "8F1E9328-C749-4183-815D-9AE472A6AE9F"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "DT/Presentation/Profile View Controller/ProfileViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "189930BB-CA72-4AEE-8DB8-725E2B8B7198"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "DT/Presentation/Profile View Controller/ProfileViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "135193BC-B8D3-42FA-B92F-81C0C988297B"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "DT/Presentation/Profile View Controller/ProfileViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "1D7FA690-D8D9-4A44-9EAF-DD78F54B8AF1"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "DT/Presentation/Profile View Controller/ProfileViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
-            landmarkName = "viewDidLoad()"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "performSearch(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

@@ -35,9 +35,9 @@ class ProfileViewController: UIViewController {
     }
     func loadProfile(_ profileView: UIProfileView) {
         if let item = profileVM.profileViewItem {
-        profileView.accountId.text = item.accountId
-        Nuke.loadImage(with: item.imageURL, into: profileView.profileImage)
-        profileView.personName.text = item.username
+            profileView.accountId.text = item.accountId
+            Nuke.loadImage(with: item.imageURL, into: profileView.profileImage)
+            profileView.personName.text = item.username
         }
     }
         

@@ -9,13 +9,16 @@
 import UIKit
 import Nuke
 import ReactiveSwift
+import ReactiveCocoa
+import Result
 
 class SearchResultsViewController: UIViewController {
     
     var searchResults: [User]?
     let searchVM = SearchViewModel()
     var table: UITableView!
-    let lifetime = Lifetime.make().lifetime
+    var delegate: TransitionDelegate!
+    var (signal, observer) = Signal<String, NoError>.pipe()
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTable()
@@ -28,11 +31,13 @@ class SearchResultsViewController: UIViewController {
 
 extension SearchResultsViewController: UISearchResultsUpdating, UISearchBarDelegate {
     func updateSearchResults(for searchController: UISearchController) {
-        searchVM.startSearch(searchController.searchBar.text ?? "", completion: { [weak self] _ in
-            DispatchQueue.main.async {
-                self?.table.reloadData()
+        searchController.searchBar.reactive.continuousTextValues.take(duringLifetimeOf: self).debounce(2, on: QueueScheduler.main).observe { [weak self] signal in
+            self?.searchVM.startSearch(searchController.searchBar.text ?? "").start() { [weak self] _ in
+                DispatchQueue.main.async {
+                    self?.table.reloadData()
+                }
             }
-        })
+        }
     }
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         searchResults = []
@@ -61,11 +66,7 @@ extension SearchResultsViewController: UITableViewDelegate, UITableViewDataSourc
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if let data = searchResults?[indexPath.row] {
-            let profileVC = ProfileViewController(accountIdentifier: data.accountId)
-            UserDefaults.standard.set(data.accountId, forKey: "defaultUser")
-            show(profileVC, sender: nil)
-        }
+        self.delegate.performTransition(for: searchVM.accountForCell(at: indexPath))
     }
     func setupTable() {
         table = UITableView(frame: CGRect(x: 0, y: self.navigationController?.navigationBar.bounds.height ?? 0, width: self.view.bounds.width, height: self.view.bounds.height - (self.navigationController?.navigationBar.bounds.height ?? 0)))

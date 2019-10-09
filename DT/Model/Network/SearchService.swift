@@ -12,11 +12,12 @@ import ReactiveSwift
 
 class SearchService {
     var openDotaService = OpenDotaService()
+    let link = "https://api.opendota.com/api/search?q="
     func performSearch(_ searchedPlayer: String) -> SignalProducer<Data, Error> {
-        let producer: SignalProducer<Data, Error> = SignalProducer { [weak self] observer, lifetime in
+        SignalProducer { [weak self] (observer, lifetime) in
             let player = searchedPlayer.replacingOccurrences(of: " ", with: "%20")
-            let link = Constant.Link.search + player
-            guard let url = URL(string: link) else {
+            let urlString = (self?.link ?? "") + player
+            guard let url = URL(string: urlString) else {
                 return
             }
             self?.openDotaService.setRequest(url).take(during: lifetime).startWithResult() { result in
@@ -25,9 +26,7 @@ class SearchService {
                 } else if let error = result.error{
                     observer.send(error: error)
                 }
-                
             }
         }
-        return producer
     }
 }

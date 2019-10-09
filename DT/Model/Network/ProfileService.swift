@@ -11,12 +11,12 @@ import Result
 import ReactiveSwift
 
 class ProfileService {
-    let lifetime = Lifetime.make().lifetime
+    let link = "https://api.opendota.com/api/players/"
     let openDotaService = OpenDotaService()
     func getProfile(_ accountId: Int) -> SignalProducer<Data, Error> {
         let producer: SignalProducer<Data, Error> = SignalProducer { [weak self] (observer, _) in
-            let link = Constant.Link.getProfile + String(accountId)
-            guard let url = URL(string: link) else {
+            let urlString = (self?.link ?? "") + String(accountId)
+            guard let url = URL(string: urlString) else {
                 return
             }
             self?.openDotaService.setRequest(url).startWithResult() { result in
