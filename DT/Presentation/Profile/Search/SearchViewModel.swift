@@ -16,7 +16,7 @@ class SearchViewModel {
     var network = OpenDotaService()
     let searchService = SearchService()
     var parser = DataParseService()
-    var searchItem: SearchResultsItem?
+    var searchItem: SearchItem?
     
     func startSearch(_ text: String) -> SignalProducer<[User], NoError> {
         SignalProducer { [weak self] (observer, lifetime) in
@@ -57,6 +57,6 @@ class SearchViewModel {
         }
         let date = user?.lastMatchTime ?? ""
         let accountIdText = String(accountId)
-        searchItem = SearchResultsItem(accountId: accountIdText, personName: personName, imageURL: url, date: date)
+        searchItem = SearchItem(accountId: accountIdText, personName: personName, imageURL: url, date: date)
     }
 }

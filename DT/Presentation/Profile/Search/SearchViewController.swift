@@ -12,12 +12,12 @@ import ReactiveSwift
 import ReactiveCocoa
 import Result
 
-class SearchResultsViewController: UIViewController {
+class SearchViewController: UIViewController {
     
     var searchResults: [User]?
     let searchVM = SearchViewModel()
     var table: UITableView!
-    var delegate: TransitionDelegate!
+    var delegate: ProfileTransitionDelegate!
     var (signal, observer) = Signal<String, NoError>.pipe()
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,9 +29,9 @@ class SearchResultsViewController: UIViewController {
 
 //MARK: SearchController configuration
 
-extension SearchResultsViewController: UISearchResultsUpdating, UISearchBarDelegate {
+extension SearchViewController: UISearchResultsUpdating, UISearchBarDelegate {
     func updateSearchResults(for searchController: UISearchController) {
-        searchController.searchBar.reactive.continuousTextValues.take(duringLifetimeOf: self).debounce(2, on: QueueScheduler.main).observe { [weak self] signal in
+        searchController.searchBar.reactive.continuousTextValues.take(duringLifetimeOf: self).debounce(1.5, on: QueueScheduler.main).observe { [weak self] signal in
             self?.searchVM.startSearch(searchController.searchBar.text ?? "").start() { [weak self] _ in
                 DispatchQueue.main.async {
                     self?.table.reloadData()
@@ -45,7 +45,7 @@ extension SearchResultsViewController: UISearchResultsUpdating, UISearchBarDeleg
     }
 }
 //MARK: UITABLEVIEW configuration
-extension SearchResultsViewController: UITableViewDelegate, UITableViewDataSource {
+extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -69,7 +69,8 @@ extension SearchResultsViewController: UITableViewDelegate, UITableViewDataSourc
         self.delegate.performTransition(for: searchVM.accountForCell(at: indexPath))
     }
     func setupTable() {
-        table = UITableView(frame: CGRect(x: 0, y: self.navigationController?.navigationBar.bounds.height ?? 0, width: self.view.bounds.width, height: self.view.bounds.height - (self.navigationController?.navigationBar.bounds.height ?? 0)))
+        let barHeight = self.navigationController?.navigationBar.bounds.height ?? 0
+        table = UITableView(frame: CGRect(x: 0, y: barHeight, width: self.view.bounds.width, height: self.view.bounds.height - barHeight))
         table.register(UINib(nibName: "SearchResultsTableCell", bundle: nil), forCellReuseIdentifier: "searchCell")
         table.delegate = self
         table.dataSource = self

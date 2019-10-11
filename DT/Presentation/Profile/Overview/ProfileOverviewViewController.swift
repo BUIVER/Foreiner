@@ -9,10 +9,10 @@
 import UIKit
 import Nuke
 
-class OverviewViewController: UIViewController {
+class ProfileOverviewViewController: UIViewController {
 
-    let searchResultsVC = SearchResultsViewController()
-    
+    let searchResultsVC = SearchViewController()
+    let overviewVM = ProfileOverviewViewModel()
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .white
@@ -23,25 +23,20 @@ class OverviewViewController: UIViewController {
         
     }
     func setupController() {
-        let searchController: UISearchController = {
-            let searchController = UISearchController(searchResultsController: searchResultsVC)
-            searchController.searchResultsUpdater = searchResultsVC as UISearchResultsUpdating
-            searchController.obscuresBackgroundDuringPresentation = false
-            searchController.searchBar.placeholder = "Input user name"
-            searchController.searchBar.delegate = searchResultsVC
-            return searchController
-        }()
+        let searchController = overviewVM.initiateSearchController(searchResultsVC)
+        navigationItem.title = "Search"
         navigationItem.searchController = searchController
     }
 }
 
-extension OverviewViewController: TransitionDelegate {
+extension ProfileOverviewViewController: ProfileTransitionDelegate {
     func performTransition(for accountId: Int) {
+        overviewVM.setDefaultUser(accountId)
         let profileVC = ProfileViewController(accountIdentifier: accountId)
         show(profileVC, sender: nil)
     }
 }
 
-protocol TransitionDelegate {
+protocol ProfileTransitionDelegate {
     func performTransition(for accountId: Int)
 }

@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct SearchResultsItem {
+struct SearchItem {
     var accountId: String
     var personName: String
     var imageURL: URL
