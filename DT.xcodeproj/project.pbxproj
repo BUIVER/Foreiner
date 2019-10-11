@@ -28,7 +28,7 @@
 		4BE4CCF92344B1DE00456F88 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE4CCF82344B1DE00456F88 /* SearchViewController.swift */; };
 		4BE4CCFB234B204C00456F88 /* ProfileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE4CCFA234B204C00456F88 /* ProfileService.swift */; };
 		4BE4CCFD234B241800456F88 /* SearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE4CCFC234B241800456F88 /* SearchService.swift */; };
-		4BE4CCFF234B266F00456F88 /* ProfileVIewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE4CCFE234B266F00456F88 /* ProfileVIewModel.swift */; };
+		4BE4CCFF234B266F00456F88 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE4CCFE234B266F00456F88 /* ProfileViewModel.swift */; };
 		4BE4CD01234B2D4500456F88 /* ProfileViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE4CD00234B2D4500456F88 /* ProfileViewItem.swift */; };
 		4BE4CD04234C754800456F88 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE4CD03234C754800456F88 /* SearchViewModel.swift */; };
 /* End PBXBuildFile section */
@@ -57,7 +57,7 @@
 		4BE4CCF82344B1DE00456F88 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		4BE4CCFA234B204C00456F88 /* ProfileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileService.swift; sourceTree = "<group>"; };
 		4BE4CCFC234B241800456F88 /* SearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchService.swift; sourceTree = "<group>"; };
-		4BE4CCFE234B266F00456F88 /* ProfileVIewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVIewModel.swift; sourceTree = "<group>"; };
+		4BE4CCFE234B266F00456F88 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		4BE4CD00234B2D4500456F88 /* ProfileViewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewItem.swift; sourceTree = "<group>"; };
 		4BE4CD03234C754800456F88 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		66593D0A6E0FA93F57E7F80F /* Pods-DT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DT.debug.xcconfig"; path = "Target Support Files/Pods-DT/Pods-DT.debug.xcconfig"; sourceTree = "<group>"; };
@@ -90,7 +90,7 @@
 			children = (
 				4BDEDA4E2344881400B006DA /* Profile View */,
 				4B3983D4233BA8470085CC54 /* ProfileViewController.swift */,
-				4BE4CCFE234B266F00456F88 /* ProfileVIewModel.swift */,
+				4BE4CCFE234B266F00456F88 /* ProfileViewModel.swift */,
 				4BE4CD00234B2D4500456F88 /* ProfileViewItem.swift */,
 			);
 			path = Result;
@@ -382,7 +382,7 @@
 				4BE4CD01234B2D4500456F88 /* ProfileViewItem.swift in Sources */,
 				4BE4CCFD234B241800456F88 /* SearchService.swift in Sources */,
 				4B3983BE233BA0590085CC54 /* SceneDelegate.swift in Sources */,
-				4BE4CCFF234B266F00456F88 /* ProfileVIewModel.swift in Sources */,
+				4BE4CCFF234B266F00456F88 /* ProfileViewModel.swift in Sources */,
 				4B3983D9233C9B4E0085CC54 /* Utilities.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
