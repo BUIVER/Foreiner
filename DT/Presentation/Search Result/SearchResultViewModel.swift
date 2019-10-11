@@ -13,8 +13,7 @@ import Result
 class SearchViewModel {
     var searchResults: [User]?
     var filteredUsers = [User]()
-    var network = OpenDotaService()
-    let searchService = SearchService()
+    let searchService = Network()
     var parser = DataParseService()
     var searchItem: SearchResultsItem?
     
