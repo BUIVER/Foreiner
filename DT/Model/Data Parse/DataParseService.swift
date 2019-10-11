@@ -58,40 +58,5 @@ class DataParseService {
         let player = Player(rankTier: rankTier, accountId: accountId, avatarLink: avatarLink, personaname: personaName, name: name, steamId: steamId, profileUrl: profileUrl, soloCompetitiveRank: soloRank)
         return player
     }
-    func parseHeroData(_ data: Data) -> [Hero] {
-        var parsedData: [Hero] = []
-        do {
-            guard let jsonData = try JSONSerialization.jsonObject(with: data, options: .mutableContainers) as? [JSON] else {
-                return parsedData
-            }
-            if jsonData.count > 0 {
-                for index in 0..<jsonData.count {
-                    let heroData = jsonData[index]
-                    guard let id = heroData["id"] as? Int else {
-                        continue
-                    }
-                    guard let name = heroData["name"] as? String else {
-                        continue
-                    }
-                    guard let localizedName = heroData["localized_name"] as? String else {
-                        continue
-                    }
-                    guard let attribute = heroData["primary_attr"] as? String else {
-                        continue
-                    }
-                    guard let attackType = heroData["attack_type"] as? String else {
-                        continue
-                    }
-                    guard let roles = heroData["roles"] as? [String] else {
-                        continue
-                    }
-                    let hero = Hero(id: id, name: name, localizedName: localizedName, attribute: attribute, attackType: attackType, roles: roles)
-                    parsedData.append(hero)
-                }
-            }
-        } catch {
-            print(error.localizedDescription)
-        }
-        return parsedData
-    }
+    
 }
