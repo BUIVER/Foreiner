@@ -8,11 +8,4 @@
 
 import Foundation
 
-
-enum Constant {
-    enum Link {
-        static let search = "https://api.opendota.com/api/search?q="
-        static let getProfile = "https://api.opendota.com/api/players/"
-    }
-}   
 typealias JSON = [AnyHashable: Any]

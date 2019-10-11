@@ -11,7 +11,7 @@ import ReactiveSwift
 import Result
 
 class ProfileViewModel {
-    var profileService = ProfileService()
+    var profileService = Network()
     var parser = DataParseService()
     var player: Player?
     var profileViewItem: ProfileViewItem?

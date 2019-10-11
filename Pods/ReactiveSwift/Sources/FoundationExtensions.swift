@@ -98,7 +98,9 @@ extension DispatchTimeInterval {
 			return TimeInterval(ns) / TimeInterval(NSEC_PER_SEC)
 		case .never:
 			return .infinity
-		}
+        @unknown default:
+            fatalError("Got some unexpected interval")
+        }
 	}
 
 	// This was added purely so that our test scheduler to "go backwards" in
@@ -115,6 +117,8 @@ extension DispatchTimeInterval {
 			return .nanoseconds(-ns)
 		case .never:
 			return .never
+        @unknown default:
+            fatalError("Got some unexpected interval")
 		}
 	}
 
