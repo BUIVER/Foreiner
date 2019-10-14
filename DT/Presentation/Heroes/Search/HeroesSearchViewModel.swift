@@ -13,6 +13,7 @@ class HeroesSearchViewModel {
     var heroesService = HeroesService()
     var parser = DataParseService()
     var heroes: [Hero] = []
+    var filteredHeroes: [Hero] = []
     var heroItem: HeroesSearchItem?
     var profileViewItem: HeroesSearchItem?
     func getHeroesData() -> SignalProducer<[Hero], Error> {
@@ -20,6 +21,7 @@ class HeroesSearchViewModel {
             self?.heroesService.getHeroesList().startWithResult() { responseData in
                 if let heroData = responseData.result.value {
                     self?.heroes = self?.parser.parseHeroData(heroData) ?? []
+                    self?.filteredHeroes = self?.heroes ?? []
                     observer.sendCompleted()
                 }
             }
@@ -27,15 +29,17 @@ class HeroesSearchViewModel {
     }
     
     func rowsAmount() -> Int {
-        return heroes.count
+        return filteredHeroes.count
     }
     func loadCell(for indexPath: IndexPath) {
-        let hero = heroes[indexPath.row]
+        let hero = filteredHeroes[indexPath.row]
         let name = hero.localizedName
         let attribute = hero.attribute
-//        guard let url = hero.url else {
-//            return
-//        }
         heroItem = HeroesSearchItem(heroName: name, attribute: attribute)
+    }
+    func filterHeroes(_ searchText: String) {
+        filteredHeroes = heroes.filter({
+            $0.localizedName.lowercased().contains(searchText.lowercased())
+        })
     }
 }

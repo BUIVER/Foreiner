@@ -29,6 +29,8 @@ class HeroesSearchViewController: UIViewController {
 
 extension HeroesSearchViewController: UISearchResultsUpdating, UISearchBarDelegate {
     func updateSearchResults(for searchController: UISearchController) {
+        heroesVM.filterHeroes(searchController.searchBar.text ?? "")
+        table.reloadData()
 //        searchController.searchBar.reactive.continuousTextValues.take(duringLifetimeOf: self).observe { [weak self] _ in
 //            self?.heroesVM.getHeroesData().startWithCompleted {
 //                DispatchQueue.main.async {
@@ -36,7 +38,7 @@ extension HeroesSearchViewController: UISearchResultsUpdating, UISearchBarDelega
 //                }
 //            }
 //        }
-            
+         
     }
 }
 
@@ -62,7 +64,7 @@ extension HeroesSearchViewController: UITableViewDelegate, UITableViewDataSource
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.delegate.performTransition(hero: heroesVM.heroes[indexPath.row])
+        self.delegate.performTransition(hero: heroesVM.filteredHeroes[indexPath.row])
     }
     func setupTable() {
         let barHeight = self.navigationController?.navigationBar.bounds.height ?? 0
