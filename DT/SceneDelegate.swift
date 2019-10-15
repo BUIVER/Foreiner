@@ -22,6 +22,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let navigation = UINavigationController(rootViewController: OverviewViewController())
         window?.rootViewController = navigation
         if let accountId = UserDefaults.standard.object(forKey: "defaultUser") as? Int {
+            
             let profileVC = ProfileViewController(accountIdentifier: accountId)
             navigation.pushViewController(profileVC, animated: true)
         }

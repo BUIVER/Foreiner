@@ -15,7 +15,7 @@ class SearchResultsTableCell: UITableViewCell {
     @IBOutlet weak var accountIdLabel: UILabel!
     @IBOutlet weak var lastMatchTimeLabel: UILabel!
     
-    func loadCell(withData data: SearchResultsItem) {
+    func loadCell(withData data: SearchItem) {
         self.accountIdLabel.text = data.accountId
         Nuke.loadImage(with: data.imageURL, into: self.avatarImageView)
         self.personaNameLabel.text = data.personName
