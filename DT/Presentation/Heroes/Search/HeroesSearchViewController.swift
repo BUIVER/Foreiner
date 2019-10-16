@@ -18,11 +18,6 @@ class HeroesSearchViewController: UIViewController {
         super.viewDidLoad()
         setupTable()
         self.view.backgroundColor = .white
-        self.heroesVM.getHeroesData().startWithCompleted {
-            DispatchQueue.main.async {
-                self.table.reloadData()
-            }
-        }
         // Do any additional setup after loading the view.
     }
 }
@@ -31,14 +26,6 @@ extension HeroesSearchViewController: UISearchResultsUpdating, UISearchBarDelega
     func updateSearchResults(for searchController: UISearchController) {
         heroesVM.filterHeroes(searchController.searchBar.text ?? "")
         table.reloadData()
-//        searchController.searchBar.reactive.continuousTextValues.take(duringLifetimeOf: self).observe { [weak self] _ in
-//            self?.heroesVM.getHeroesData().startWithCompleted {
-//                DispatchQueue.main.async {
-//                    self?.table.reloadData()
-//                }
-//            }
-//        }
-         
     }
 }
 
