@@ -14,7 +14,7 @@
 		4B23FEEA2355AC33005B0B57 /* SearchResultsTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B23FEE52355AC33005B0B57 /* SearchResultsTableCell.swift */; };
 		4B23FEEB2355AC34005B0B57 /* SearchResultsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B23FEE72355AC33005B0B57 /* SearchResultsItem.swift */; };
 		4B23FEFA2355AED2005B0B57 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B23FEF92355AED2005B0B57 /* SearchViewModel.swift */; };
-		4B23FF072355B065005B0B57 /* ProfileVIewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B23FF062355B065005B0B57 /* ProfileVIewModel.swift */; };
+		4B23FF072355B065005B0B57 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B23FF062355B065005B0B57 /* ProfileViewModel.swift */; };
 		4B23FF1D2355B18F005B0B57 /* OverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B23FF1B2355B15A005B0B57 /* OverviewViewController.swift */; };
 		4B23FF1E2355B18F005B0B57 /* OverviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B23FF1C2355B15D005B0B57 /* OverviewViewModel.swift */; };
 		4B23FF1F2355B18F005B0B57 /* UIProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B23FF172355B12D005B0B57 /* UIProfileView.swift */; };
@@ -40,7 +40,7 @@
 		4B23FEE72355AC33005B0B57 /* SearchResultsItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsItem.swift; sourceTree = "<group>"; };
 		4B23FEE82355AC33005B0B57 /* SearchResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsViewController.swift; sourceTree = "<group>"; };
 		4B23FEF92355AED2005B0B57 /* SearchViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchViewModel.swift; path = "../../../../../Downloads/Foreiner-Backup/DT/Presentation/Profile/Search/SearchViewModel.swift"; sourceTree = "<group>"; };
-		4B23FF062355B065005B0B57 /* ProfileVIewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVIewModel.swift; sourceTree = "<group>"; };
+		4B23FF062355B065005B0B57 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		4B23FF152355B12C005B0B57 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		4B23FF162355B12D005B0B57 /* ProfileViewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewItem.swift; sourceTree = "<group>"; };
 		4B23FF172355B12D005B0B57 /* UIProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIProfileView.swift; sourceTree = "<group>"; };
@@ -105,7 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				4B23FF192355B131005B0B57 /* Profile View */,
-				4B23FF062355B065005B0B57 /* ProfileVIewModel.swift */,
+				4B23FF062355B065005B0B57 /* ProfileViewModel.swift */,
 				4B23FF152355B12C005B0B57 /* ProfileViewController.swift */,
 				4B23FF162355B12D005B0B57 /* ProfileViewItem.swift */,
 			);
@@ -360,7 +360,7 @@
 				4B23FED22355AB9E005B0B57 /* Constants.swift in Sources */,
 				4B23FEEA2355AC33005B0B57 /* SearchResultsTableCell.swift in Sources */,
 				4B23FEE92355AC33005B0B57 /* SearchResultsViewController.swift in Sources */,
-				4B23FF072355B065005B0B57 /* ProfileVIewModel.swift in Sources */,
+				4B23FF072355B065005B0B57 /* ProfileViewModel.swift in Sources */,
 				4B3983BC233BA0590085CC54 /* AppDelegate.swift in Sources */,
 				4B3983E2233DF5E50085CC54 /* DataParseService.swift in Sources */,
 				4B23FEEB2355AC34005B0B57 /* SearchResultsItem.swift in Sources */,
