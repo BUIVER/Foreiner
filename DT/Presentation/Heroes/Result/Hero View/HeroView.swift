@@ -7,13 +7,15 @@
 //
 
 import UIKit
+import Nuke
 
 class HeroView: UIView {
     @IBOutlet private weak var contentView: UIView!
-    @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var attributeLabel: UILabel!
-    @IBOutlet weak var attackTypeLabel: UILabel!
-    @IBOutlet weak var rolesLabel: UILabel!
+    @IBOutlet private weak var nameLabel: UILabel!
+    @IBOutlet private weak var attributeLabel: UILabel!
+    @IBOutlet private weak var attackTypeLabel: UILabel!
+    @IBOutlet private weak var rolesLabel: UILabel!
+    @IBOutlet private weak var heroLogoView: UIImageView!
     override func awakeFromNib() {
     }
     func loadView(withData data: HeroesResultItem) {
@@ -22,6 +24,7 @@ class HeroView: UIView {
         self.attributeLabel.textColor = UIColor(named: data.attribute)
         self.attackTypeLabel.text = data.attackType
         self.rolesLabel.text = data.roles
+        loadImage(with: HeroesService.shared.getHeroLogo(hero: data.heroName)!, into: self.heroLogoView)
     }
     override init(frame: CGRect) {
         super.init(frame: frame)

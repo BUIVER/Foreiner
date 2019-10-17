@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14903" systemVersion="19A583" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="Heroes" representedClassName="Heroes" syncable="YES" codeGenerationType="class">
-        <attribute name="attackType" optional="YES" attributeType="String"/>
-        <attribute name="attribute" optional="YES" attributeType="String"/>
-        <attribute name="name" optional="YES" attributeType="String"/>
-        <attribute name="roles" optional="YES" attributeType="Transformable" customClassName="String"/>
+        <attribute name="attackType" attributeType="String"/>
+        <attribute name="attribute" attributeType="String"/>
+        <attribute name="id" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="name" attributeType="String"/>
+        <attribute name="roles" attributeType="Transformable" valueTransformerName="NSSecureUnarchiveFromData" customClassName="[String]"/>
+        <attribute name="systemName" attributeType="String"/>
     </entity>
     <elements>
-        <element name="Heroes" positionX="-54" positionY="-9" width="128" height="103"/>
+        <element name="Heroes" positionX="-54" positionY="-9" width="128" height="133"/>
     </elements>
 </model>

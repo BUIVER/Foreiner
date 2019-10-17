@@ -12,7 +12,7 @@ class HeroesResultViewController: UIViewController {
     
     var hero: Hero?
     let heroesResultVM = HeroesResultViewModel()
-    
+    var heroLogo: UIImage?
     override func viewDidLoad() {
         super.viewDidLoad()
         heroesResultVM.hero = hero

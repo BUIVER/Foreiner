@@ -70,6 +70,9 @@ extension HeroesOverviewViewController: UITableViewDelegate, UITableViewDataSour
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.performTransition(hero: overviewVM.heroes[indexPath.row])
+    }
     
 }
 protocol HeroesTransitionDelegate {

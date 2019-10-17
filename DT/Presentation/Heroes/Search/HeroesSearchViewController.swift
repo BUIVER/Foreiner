@@ -9,6 +9,7 @@
 import UIKit
 import ReactiveSwift
 import ReactiveCocoa
+import CoreML
 
 class HeroesSearchViewController: UIViewController {
     var heroesVM = HeroesSearchViewModel()
@@ -21,7 +22,6 @@ class HeroesSearchViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 }
-
 extension HeroesSearchViewController: UISearchResultsUpdating, UISearchBarDelegate {
     func updateSearchResults(for searchController: UISearchController) {
         heroesVM.filterHeroes(searchController.searchBar.text ?? "")

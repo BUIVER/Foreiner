@@ -15,7 +15,7 @@ class SearchViewModel {
     var filteredUsers = [User]()
     var network = OpenDotaService()
     let searchService = SearchService()
-    var parser = DataParseService()
+    var parser = NetworkDataParseService()
     var searchItem: SearchItem?
     
     func startSearch(_ text: String) -> SignalProducer<[User], NoError> {
