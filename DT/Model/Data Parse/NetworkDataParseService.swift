@@ -8,7 +8,7 @@
 
 import Foundation
 
-class DataParseService {
+class NetworkDataParseService {
     func parseSearchData(_ jsonData: Data) -> [User] {
         var parsedData: [User] = []
         do {

@@ -19,7 +19,7 @@ class HeroesResultViewModel {
         hero.roles.forEach { role in
             rolesString.append("\(role), ")
         }
-        rolesString.removeLast(2 )
+        rolesString.removeLast(2)
         return HeroesResultItem(heroName: hero.localizedName, attribute: hero.attribute, roles: rolesString, attackType: hero.attackType)
     }
 }

@@ -12,7 +12,7 @@ import Result
 
 class ProfileViewModel {
     var profileService = ProfileService()
-    var parser = DataParseService()
+    var parser = NetworkDataParseService()
     var player: Player?
     var profileViewItem: ProfileViewItem?
     func getProfileData(_ accountId: Int, completion: @escaping () -> Void) {

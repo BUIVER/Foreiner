@@ -10,23 +10,10 @@ import Foundation
 import ReactiveSwift
 
 class HeroesSearchViewModel {
-    var heroesService = HeroesService()
-    var parser = DataParseService()
     var heroes: [Hero] = []
     var filteredHeroes: [Hero] = []
     var heroItem: HeroesSearchItem?
     var profileViewItem: HeroesSearchItem?
-    func getHeroesData() -> SignalProducer<[Hero], Error> {
-        SignalProducer { [weak self] (observer, lifetime) in
-            self?.heroesService.getHeroesList().startWithResult() { responseData in
-                if let heroData = responseData.result.value {
-                    self?.heroes = self?.parser.parseHeroData(heroData) ?? []
-                    self?.filteredHeroes = self?.heroes ?? []
-                    observer.sendCompleted()
-                }
-            }
-        }
-    }
     
     func rowsAmount() -> Int {
         return filteredHeroes.count

@@ -18,6 +18,10 @@
 		4B23FEC8234F6F2C005B0B57 /* HeroesResultItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B23FEC7234F6F2C005B0B57 /* HeroesResultItem.swift */; };
 		4B23FECB234F724C005B0B57 /* HeroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B23FECA234F724C005B0B57 /* HeroView.swift */; };
 		4B23FECD234F728F005B0B57 /* HeroView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B23FECC234F728F005B0B57 /* HeroView.xib */; };
+		4B23FF262355F73C005B0B57 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4B23FF242355F73C005B0B57 /* DataModel.xcdatamodeld */; };
+		4B23FF292355FB08005B0B57 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B23FF282355FB08005B0B57 /* CoreDataManager.swift */; };
+		4B23FF302357461D005B0B57 /* DataBaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B23FF2F2357461D005B0B57 /* DataBaseService.swift */; };
+		4B23FF3223574830005B0B57 /* DataBaseParseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B23FF3123574830005B0B57 /* DataBaseParseService.swift */; };
 		4B3983BC233BA0590085CC54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3983BB233BA0590085CC54 /* AppDelegate.swift */; };
 		4B3983BE233BA0590085CC54 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3983BD233BA0590085CC54 /* SceneDelegate.swift */; };
 		4B3983C0233BA0590085CC54 /* ProfileOverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3983BF233BA0590085CC54 /* ProfileOverviewViewController.swift */; };
@@ -27,7 +31,7 @@
 		4B3983D7233C9A8A0085CC54 /* OpenDotaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3983D6233C9A8A0085CC54 /* OpenDotaService.swift */; };
 		4B3983D9233C9B4E0085CC54 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3983D8233C9B4E0085CC54 /* Utilities.swift */; };
 		4B3983DB233C9E760085CC54 /* SearchUserStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3983DA233C9E760085CC54 /* SearchUserStructure.swift */; };
-		4B3983E2233DF5E50085CC54 /* DataParseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3983E1233DF5E50085CC54 /* DataParseService.swift */; };
+		4B3983E2233DF5E50085CC54 /* NetworkDataParseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3983E1233DF5E50085CC54 /* NetworkDataParseService.swift */; };
 		4B649D94234CAE4100A05F88 /* SearchItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B649D93234CAE4100A05F88 /* SearchItem.swift */; };
 		4B649D96234DCCFE00A05F88 /* ProfileOverviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B649D95234DCCFE00A05F88 /* ProfileOverviewViewModel.swift */; };
 		4B649D98234E05A700A05F88 /* HostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B649D97234E05A700A05F88 /* HostViewController.swift */; };
@@ -60,6 +64,10 @@
 		4B23FEC7234F6F2C005B0B57 /* HeroesResultItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesResultItem.swift; sourceTree = "<group>"; };
 		4B23FECA234F724C005B0B57 /* HeroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroView.swift; sourceTree = "<group>"; };
 		4B23FECC234F728F005B0B57 /* HeroView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeroView.xib; sourceTree = "<group>"; };
+		4B23FF252355F73C005B0B57 /* Data Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Data Model.xcdatamodel"; sourceTree = "<group>"; };
+		4B23FF282355FB08005B0B57 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		4B23FF2F2357461D005B0B57 /* DataBaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseService.swift; sourceTree = "<group>"; };
+		4B23FF3123574830005B0B57 /* DataBaseParseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseParseService.swift; sourceTree = "<group>"; };
 		4B3983B8233BA0590085CC54 /* DT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B3983BB233BA0590085CC54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4B3983BD233BA0590085CC54 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,7 +79,7 @@
 		4B3983D6233C9A8A0085CC54 /* OpenDotaService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenDotaService.swift; sourceTree = "<group>"; };
 		4B3983D8233C9B4E0085CC54 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		4B3983DA233C9E760085CC54 /* SearchUserStructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUserStructure.swift; sourceTree = "<group>"; };
-		4B3983E1233DF5E50085CC54 /* DataParseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataParseService.swift; sourceTree = "<group>"; };
+		4B3983E1233DF5E50085CC54 /* NetworkDataParseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataParseService.swift; sourceTree = "<group>"; };
 		4B649D93234CAE4100A05F88 /* SearchItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchItem.swift; sourceTree = "<group>"; };
 		4B649D95234DCCFE00A05F88 /* ProfileOverviewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileOverviewViewModel.swift; sourceTree = "<group>"; };
 		4B649D97234E05A700A05F88 /* HostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostViewController.swift; sourceTree = "<group>"; };
@@ -144,6 +152,16 @@
 			path = "Hero View";
 			sourceTree = "<group>";
 		};
+		4B23FF272355FAF2005B0B57 /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				4B23FF242355F73C005B0B57 /* DataModel.xcdatamodeld */,
+				4B23FF282355FB08005B0B57 /* CoreDataManager.swift */,
+				4B23FF2F2357461D005B0B57 /* DataBaseService.swift */,
+			);
+			path = "Core Data";
+			sourceTree = "<group>";
+		};
 		4B3983AF233BA0590085CC54 = {
 			isa = PBXGroup;
 			children = (
@@ -188,6 +206,7 @@
 		4B3983DF233DF4A90085CC54 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4B23FF272355FAF2005B0B57 /* Core Data */,
 				4B792299233E51D200D856F1 /* Data Parse */,
 				4B792298233E51CD00D856F1 /* Network */,
 			);
@@ -268,7 +287,8 @@
 			isa = PBXGroup;
 			children = (
 				4B79229A233E51F100D856F1 /* Structures */,
-				4B3983E1233DF5E50085CC54 /* DataParseService.swift */,
+				4B3983E1233DF5E50085CC54 /* NetworkDataParseService.swift */,
+				4B23FF3123574830005B0B57 /* DataBaseParseService.swift */,
 			);
 			path = "Data Parse";
 			sourceTree = "<group>";
@@ -468,13 +488,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B23FF262355F73C005B0B57 /* DataModel.xcdatamodeld in Sources */,
 				4BE4CCF92344B1DE00456F88 /* SearchViewController.swift in Sources */,
 				4B3983C0233BA0590085CC54 /* ProfileOverviewViewController.swift in Sources */,
 				4B23FEBD234E25AA005B0B57 /* HeroesOverviewViewModel.swift in Sources */,
+				4B23FF292355FB08005B0B57 /* CoreDataManager.swift in Sources */,
 				4B3983BC233BA0590085CC54 /* AppDelegate.swift in Sources */,
 				4BE4CD04234C754800456F88 /* SearchViewModel.swift in Sources */,
 				4B23FEC6234F6DB3005B0B57 /* HeroesResultViewModel.swift in Sources */,
-				4B3983E2233DF5E50085CC54 /* DataParseService.swift in Sources */,
+				4B3983E2233DF5E50085CC54 /* NetworkDataParseService.swift in Sources */,
 				4B649DA2234E197800A05F88 /* HeroStructure.swift in Sources */,
 				4B649D94234CAE4100A05F88 /* SearchItem.swift in Sources */,
 				4B3983DB233C9E760085CC54 /* SearchUserStructure.swift in Sources */,
@@ -488,6 +510,8 @@
 				4B792292233E461400D856F1 /* PlayerStructure.swift in Sources */,
 				4B23FECB234F724C005B0B57 /* HeroView.swift in Sources */,
 				4B3983D5233BA8470085CC54 /* ProfileViewController.swift in Sources */,
+				4B23FF3223574830005B0B57 /* DataBaseParseService.swift in Sources */,
+				4B23FF302357461D005B0B57 /* DataBaseService.swift in Sources */,
 				4B649D9E234E17D100A05F88 /* HeroesService.swift in Sources */,
 				4B23FEC3234F1B51005B0B57 /* HeroesSearchTableCell.swift in Sources */,
 				4B792297233E510100D856F1 /* UIProfileView.swift in Sources */,
@@ -695,6 +719,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4B23FF242355F73C005B0B57 /* DataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4B23FF252355F73C005B0B57 /* Data Model.xcdatamodel */,
+			);
+			currentVersion = 4B23FF252355F73C005B0B57 /* Data Model.xcdatamodel */;
+			path = DataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 4B3983B0233BA0590085CC54 /* Project object */;
 }
